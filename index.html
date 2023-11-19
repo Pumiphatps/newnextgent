@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bth"></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#navber">HOME</a></li>
+                    <li><a href=""><a href="#ME AND MYSELF">ME AND MYSELF</a></a></li>
+                    <li><a href="#whyme">WHY ME</a></li>
+                    <li><a href="#port">PORTFOLIO</a></li>
+                    <li><a href="#letstalk">LETS TALK</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header-infor">
+            <div class="header-title">PHUNDHAREE<br>SIRISOM</div>
+            <div class="header-img"><img src="/img/image 2.svg" alt=""></div>
+        </section>
+    </header>
+    <section class="con2">
+        <div class="con2head">
+             <h1>ME and MYSELF</h1>
+             <ul>
+                <li>I have always spent my life for just only tomorrow or maybe tomorrow of tomorrow</li>
+             </ul>
+        </div>
+        <div class="con2name">
+            <div class="con2namepic">
+                <img src="/img/con2namepic.svg" alt="">
+            </div>
+            <div class="con2nametwo">
+                <h3>
+                    My Name: Phundharee Sirisom <br>
+                    My Nickname: Earth <br>
+                    My Age Life: 17 years old
+                </h3>
+            </div>
+        </div>
+        <div class="con2hobby">
+            <div class="con2hobbytwo">
+                <h3>HOBBIES</h3>
+                <p>As well as my academically, I have always put my effort into books and movies. However, these hobbies provide me with practice for listening and reading skills, which are fundamental elements for studying at university. Besides this, books such as fiction and movies have allowed me to follow the lead character’s pathways that are full of obstacles and difficulties. These can efficiently show their growth from the first until the last, and made me learn throughout their story that life will never be easy, especially for your dream</p>
+            </div>
+            <div class="con2namepic">
+                <img src="/img/con2namepic.svg" alt="">
+            </div>
+        </div>
+        <div class="con2skill">
+            <div class="con2namepic">
+                <img src="/img/con2namepic.svg" alt="">
+            </div>
+            <div class="con2skilltwo">
+                <h3>
+                    SKILLS you may need to know
+                </h3>
+                <p>In the world of business, visual storytelling is paramount. Our commercial photography service encompasses product photography that enhances your brand, real estate photography that showcases properties at their best, and brand photography that tells your unique story to the world.</p>
+            </div>
+        </div>
+    </section>
+    <section class="con3">
+        <div class="con3name">
+            <h1>Why <br>
+                Choose <br>
+                Phundharee <br>
+                Sirisom?</h1>
+            <p>Discover the advantages of choosing Phundharee Sirisom to be your part of your university family </p>
+        </div>
+        <div class="con3cont">
+            <div class="cont-1">
+                <div class="incont-1 top-cont3">
+                    <img src="/img/Icon.svg" alt="">
+                    <h5>Creative Vision</h5>
+                    <p>Kasey's artistic eye brings a unique perspective to every project.</p>
+                </div>
+                <div class="incont-1">
+                    <img src="/img/Icon.svg" alt="">
+                    <h5>Professionalism</h5>
+                    <p>With years of experience, we ensure your vision is realized seamlessly.</p>
+                </div>
+            </div>
+            <div class="cont-2">
+                <div class="incont-2">
+                    <img src="/img/Icon.svg" alt="">
+                    <h5>Bilingual</h5>
+                    <p>We listen, adapt, and deliver precisely what you need.</p>
+                </div>
+                <div class="incont-2">
+                    <img src="/img/Icon.svg" alt="">
+                    <h5>High-Quality Results</h5>
+                    <p>Every image is meticulously crafted to perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="port">
+        <div class="portname">
+            <h1>My Portfolio</h1>
+            <p>This portfolio is more than just a collection of grades and test scores; it is a testament to my lifelong passion for learning and my unwavering commitment to personal growth. It represents the countless hours I have spent studying, the challenges I have faced and overcome, and the invaluable experiences that have shaped me into the person I am today</p>
+        </div>
+        <div class="portcont">
+                    <img src="/img/image 2.svg" alt="">
+                    <img src="/img/image 2.svg" alt="">
+                    <img src="/img/image 2.svg" alt="">
+                    <img src="/img/image 2.svg" alt="">
+                    <img src="/img/image 2.svg" alt="">
+            </div>
+        </div>
+        <script>
+            const images = document.querySelectorAll('.con23 img');
+          
+            function handleMove(event) {
+              const { clientX } = event;
+              const moveX = (clientX - window.innerWidth / 2) / 10; 
+              images.forEach(img => {
+                img.style.transform = `translateX(${moveX}px)`;
+              });
+            }
+          
+            document.addEventListener('mousemove', handleMove);
+            document.addEventListener('touchmove', (event) => {
+          
+              event.preventDefault();
+              handleMove(event.touches[0]);
+            });
+          
+            document.addEventListener('mouseleave', () => {
+              images.forEach(img => {
+                img.style.transform = 'translateX(0)';
+              });
+            });
+          </script>
+    </section>
+    <footer>
+        <section class="con5">
+            <div class="con5name">
+                <h1>wanna know more about</h1>
+            </div>
+            <div class="con5cont">
+                <div class="concont-1">
+                    <div class="con5cont-1">
+                        <p>Whether you have a specific project in mind or want to discuss how we can capture your moments, we're here to make it happen. Contact Kasey Martin Photography today, and let's start creating memories together. .  kid bor ook</p>
+                    </div>
+                    <div class="con5cont-2">
+                        <h5>Contact Me</h5>
+                        <a href=""><img src="/img/mail.png" alt=""></a>
+                        <a href=""><img src="/img/facebook (1).png" alt=""></a>
+                        <a href=""><img src="/img/instagram (2).png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
